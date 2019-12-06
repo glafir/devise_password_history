@@ -4,7 +4,7 @@ module DevisePasswordHistory
       extend ActiveSupport::Concern
 
       included do
-        append_before_filter :check_password_expiration
+        append_before_action :check_password_expiration
       end
 
     protected  
